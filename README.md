@@ -16,9 +16,11 @@ StockForecastHub is a time-series forecasting project that retrieves historical 
 #Installation and Usage
 
 # Install dependencies
+
 pip install -r requirements.txt
 
 #Running the Web App
+
 streamlit run app.py
 
 

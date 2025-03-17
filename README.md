@@ -13,16 +13,10 @@ StockForecastHub is a time-series forecasting project that retrieves historical 
 5. Performance Evaluation – Compares models using RMSE, MAE, and MAPE metrics
 6. Web App Deployment – Provides an interactive UI using Streamlit
 
-#Installation
-
-# Clone the repository
-git clone https://github.com/HamsaVardhiniS/TriStorm_StockForecastHub.git
-cd StockForecastHub
+#Installation and Usage
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Usage
 
 #Running the Web App
 streamlit run app.py

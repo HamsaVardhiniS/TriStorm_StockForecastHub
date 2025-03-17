@@ -16,7 +16,7 @@ StockForecastHub is a time-series forecasting project that retrieves historical 
 #Installation
 
 # Clone the repository
-git clone https://github.com/yourusername/StockForecastHub.git
+git clone https://github.com/HamsaVardhiniS/TriStorm_StockForecastHub.git
 cd StockForecastHub
 
 # Install dependencies

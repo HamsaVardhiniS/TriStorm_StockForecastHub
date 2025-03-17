@@ -1,10 +1,10 @@
-#StockForecastHub
+# StockForecastHub
 
-#Overview
+# Overview
 
 StockForecastHub is a time-series forecasting project that retrieves historical stock price data via Yahoo Finance (yfinance), preprocesses it, and applies predictive models like ARIMA, SARIMA, XGBoost, and LSTM. The results are visualized through interactive dashboards for better insights.
 
-#Features
+# Features
 
 1. Data Retrieval – Fetches up to 5 years of stock price data via API
 2. Data Preprocessing – Cleans and formats timestamps, handles missing values
@@ -13,9 +13,9 @@ StockForecastHub is a time-series forecasting project that retrieves historical 
 5. Performance Evaluation – Compares models using RMSE, MAE, and MAPE metrics
 6. Web App Deployment – Provides an interactive UI using Streamlit
 
-#Installation and Usage
+# Installation and Usage
 
-# Install dependencies
+#Install dependencies
 
 pip install -r requirements.txt
 

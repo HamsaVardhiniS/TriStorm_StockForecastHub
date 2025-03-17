@@ -45,7 +45,7 @@ def calculate_metrics(y_true, y_pred):
 
 st.title("📊 Time Series Forecasting Dashboard")
 
-# Section 1: Data Retrieval
+#Data Retrieval
 st.header("Data Retrieval")
 symbol = st.text_input("Enter Stock Symbol (e.g., AAPL, GOOGL):", "AAPL")
 if st.button("Fetch Data"):
@@ -64,7 +64,7 @@ if st.button("Fetch Data"):
     except Exception as e:
         st.error(f"Error fetching data: {e}")
 
-# Section 2: Data Cleaning and Preprocessing
+#Data Cleaning and Preprocessing
 if 'data' in st.session_state:
     data = st.session_state['data']
 
@@ -111,6 +111,7 @@ if 'data' in st.session_state:
     forecast = None
     mae = rmse = mape = None
 
+    # Model Training
     if model_type == "ARIMA":
         model = ARIMA(train, order=(5, 1, 0))
         model_fit = model.fit()
@@ -196,14 +197,13 @@ if 'data' in st.session_state:
         st.write(f"*RMSE:* {rmse:.2f}")
         st.write(f"*MAPE:* {mape:.2f}%")
 
-# Section 5: Forecasting Visualization
-# Section 5: Forecasting Visualization
+
+    # Forecast Visualization
     st.header("Forecasting Visualization")
     plt.figure(figsize=(14, 6))
     plt.plot(train, label='Train')
     plt.plot(test, label='Test')
 
-    # Check if forecast length matches test length
     if len(forecast) != len(test):
         # Auto-adjust the index slice to match the forecast length
         adjusted_index = test.index[-len(forecast):]
